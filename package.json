@@ -1,11 +1,11 @@
 {
-  "name": "~TODO~",
+  "name": "Inspector",
   "version": "0.0.1",
   "scripts": {
-    "dev": "env-cmd svelte-kit dev",
-    "special": "env-cmd svelte-kit dev --port 8888",
-    "build": "env-cmd svelte-kit build",
-    "preview": "env-cmd svelte-kit preview",
+    "special": "svelte-kit dev --port 8888",
+    "dev": "svelte-kit dev -p 3050",
+    "build": "svelte-kit build",
+    "preview": "svelte-kit preview",
     "lint": "prettier --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
     "format": "prettier --write --plugin-search-dir=. ."
   },
