@@ -1,4 +1,4 @@
-import { build, files, timestamp } from '$service-worker';
+import { build, files, version } from '$service-worker';
 import { precacheAndRoute, precache } from 'workbox-precaching';
 import { registerRoute } from 'workbox-routing';
 import {StaleWhileRevalidate} from 'workbox-strategies';
@@ -22,7 +22,7 @@ precacheAndRoute([
     ...files.map(f => {
         return {
             url: f,
-            revision: `${timestamp}`
+            revision: `${version}`
         }
     })
 ]);
@@ -34,7 +34,7 @@ const skRoutes = [ '/', '/about', '/todos' ];
 precache( skRoutes.map(f => {
     return {
         url: f,
-        revision: `${timestamp}`
+        revision: `${version}`
     }
 }) );
 

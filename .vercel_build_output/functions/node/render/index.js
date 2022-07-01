@@ -15184,7 +15184,7 @@ var manifest = {
   assets: /* @__PURE__ */ new Set(["apple-icon-180.png", "apple-splash-1125-2436.jpg", "apple-splash-1136-640.jpg", "apple-splash-1170-2532.jpg", "apple-splash-1242-2208.jpg", "apple-splash-1242-2688.jpg", "apple-splash-1284-2778.jpg", "apple-splash-1334-750.jpg", "apple-splash-1536-2048.jpg", "apple-splash-1620-2160.jpg", "apple-splash-1668-2224.jpg", "apple-splash-1668-2388.jpg", "apple-splash-1792-828.jpg", "apple-splash-2048-1536.jpg", "apple-splash-2048-2732.jpg", "apple-splash-2160-1620.jpg", "apple-splash-2208-1242.jpg", "apple-splash-2224-1668.jpg", "apple-splash-2388-1668.jpg", "apple-splash-2436-1125.jpg", "apple-splash-2532-1170.jpg", "apple-splash-2688-1242.jpg", "apple-splash-2732-2048.jpg", "apple-splash-2778-1284.jpg", "apple-splash-640-1136.jpg", "apple-splash-750-1334.jpg", "apple-splash-828-1792.jpg", "favicon.ico", "favicon.png", "manifest.webmanifest", "pwa-192x192.png", "pwa-512x512.png", "robots.txt", "svelte-welcome.png", "svelte-welcome.webp", "service-worker.js"]),
   mimeTypes: { ".png": "image/png", ".jpg": "image/jpeg", ".ico": "image/vnd.microsoft.icon", ".webmanifest": "application/manifest+json", ".txt": "text/plain", ".webp": "image/webp" },
   _: {
-    entry: { "file": "start-7b7db17f.js", "js": ["start-7b7db17f.js", "chunks/index-14ffccfa.js", "chunks/index-b1d95ec1.js"], "css": [] },
+    entry: { "file": "start-e8784098.js", "js": ["start-e8784098.js", "chunks/index-14ffccfa.js", "chunks/index-b1d95ec1.js"], "css": [] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),

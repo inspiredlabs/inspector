@@ -1,10 +1,5 @@
-const timestamp = {
-  toString: () => {
-    throw new Error("`timestamp` has been removed from $service-worker. Use `version` instead");
-  }
-};
 const build = [
-  "/_app/immutable/start-7b7db17f.js",
+  "/_app/immutable/start-e8784098.js",
   "/_app/immutable/pages/__layout.svelte-06035f0d.js",
   "/_app/immutable/assets/pages/__layout.svelte-14a4a193.css",
   "/_app/immutable/assets/svelte-logo-87df40b8.svg",
@@ -62,6 +57,7 @@ const files = [
   "/svelte-welcome.png",
   "/svelte-welcome.webp"
 ];
+const version = "1656688420537";
 try {
   self["workbox:core:6.5.2"] && _();
 } catch (e) {
@@ -1098,7 +1094,7 @@ precacheAndRoute([
   ...files.map((f) => {
     return {
       url: f,
-      revision: `${timestamp}`
+      revision: `${version}`
     };
   })
 ]);
@@ -1106,7 +1102,7 @@ const skRoutes = ["/", "/about", "/todos"];
 precache(skRoutes.map((f) => {
   return {
     url: f,
-    revision: `${timestamp}`
+    revision: `${version}`
   };
 }));
 const matchCb = ({ url, request, event }) => {
