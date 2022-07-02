@@ -14,7 +14,8 @@ const config = {
 	kit: {
 		// hydrate the <div id="svelte"> element in src/app.html
 		adapter: vercel(),
-		// Override: // methodOverride: { allowed: ['PATCH', 'DELETE'] }
+		// Override:
+		methodOverride: { allowed: ['PATCH', 'DELETE'] }
 
 		vite: {
       resolve: {
