@@ -26,11 +26,11 @@ import { trays } from '$lib/trays.js';
 import Row from '$lib/Row.svelte';
 </script>
 
-<Row bg="pa0 ma0 fixed verdana landscape-dn">
-	<nav
-	class="w-100 z-1 pt4 flex flex-nowrap flex-row justify-around ">
-		<a
-		style="line-height:4rem"
+<Row bg="pa0 ma0 fixed verdana">
+<nav
+	class="w-100 z-1 pt4 flex flex-nowrap flex-row justify-around landscape-dn" style="pointer-events:none">
+	<a
+		style="pointer-events:auto;line-height:4rem"
 		href="https://wa.me/447426646183/?text=I%27d%20like%20to%20order..."
 		class="
 		link
@@ -41,8 +41,8 @@ import Row from '$lib/Row.svelte';
 		f3 tc mercury white-80 ts1-dark-gray"
 		>Whatsapp</a>
 
-		<a
-		style="line-height:4rem"
+	<a
+		style="pointer-events:auto;line-height:4rem"
 		href='tel:+447426646183'
 		class="
 		link
