@@ -35,7 +35,7 @@ import Row from '$lib/Row.svelte';
 		class="
 		link
 		pv2
-		w-third mw5
+		ph3
 		pointer hover-white transition
 		bn bg-whatsapp
 		f3 tc mercury white-80 ts1-dark-gray"
@@ -47,7 +47,7 @@ import Row from '$lib/Row.svelte';
 		class="
 		link
 		pv2
-		w-third mw5
+		ph3
 		pointer hover-white transition
 		bn bg-oxford
 		f3 tc mercury white-60 ts1-dark-gray"
