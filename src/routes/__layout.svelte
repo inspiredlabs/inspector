@@ -1,16 +1,72 @@
 <script lang="ts">
-	import Header from '$lib/Header/index.svelte';
+	// import Header from '$lib/Header/index.svelte';
 	import ReloadPrompt from '$lib/ReloadPrompt/index.svelte';
 	import '../app.css';
 </script>
+<!-- <Header /> -->
+
+
+	<main class="w-100 h-100 overflow-x-scroll ">
+		<slot></slot>
+	</main>
+
+
+<ReloadPrompt />
+
+<style>
+:global(.verdana) {
+font-family: Verdana, Geneva, sans-serif;
+}
+
+/* learn: see how `mid-gray` interacts with `bg-lemon` contrast-ratio.com/ */
+
+:global(.mid-gray) {
+color: #666;
+}
+
+:global(.bg-lemon) {
+background-color: hsla(60,71%,93%,1);
+}
+
+:global(.hover-bg-lemon:hover),
+:global(.hover-bg-lemon:focus) {
+background-color: hsla(60,71%,93%,0.6);
+}
+
+:global(.bg-blur){backdrop-filter: blur(12px)}
+/* Quick prune: purifycss.online/ @import '$lib/Tachyonshower'; */
+
+:global(.snap-center) {
+	scroll-snap-align: center;
+}
+:global(.nw-100) {
+	min-width: 100%;
+}
+
+:global(.x-mandatory) {
+	-webkit-overflow-scrolling: touch;
+	scroll-snap-type: x mandatory;
+	/* must be used with: `scroll-snap-align: center` */
+}
+
+/* :global(.x-proximity) {
+	scroll-snap-type: x proximity;
+} */
+
+:global(.touch-scroll) {
+	-webkit-overflow-scrolling: touch;
+}
+</style>
 
 <svelte:head>
+	<!-- <link rel="stylesheet" type="text/css" href="../support/css/tachyon.shower.css"> -->
+
 	<link rel="manifest" href="/manifest.webmanifest" />
 	<link rel="apple-touch-icon" href="/apple-icon-180.png" />
 
 	<meta
 		name="description"
-		content="This is a Svelte-Kit PWA skeleton app based on the regular Svelte-kit app."
+		content="Svelte-Kit PWA"
 	/>
 	<meta name="apple-mobile-web-app-capable" content="yes" />
 	<!-- <link rel="icon" href="/favicon.svg" type="image/svg+xml"> -->
@@ -149,46 +205,3 @@
 		media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
 	/>
 </svelte:head>
-
-<Header />
-
-<main>
-	<slot />
-</main>
-
-<footer>
-	<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit.</p>
-</footer>
-
-<ReloadPrompt />
-
-<style>
-	main {
-		flex: 1;
-		display: flex;
-		flex-direction: column;
-		padding: 1rem;
-		width: 100%;
-		max-width: 1024px;
-		margin: 0 auto;
-		box-sizing: border-box;
-	}
-
-	footer {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		padding: 40px;
-	}
-
-	footer a {
-		font-weight: bold;
-	}
-
-	@media (min-width: 480px) {
-		footer {
-			padding: 40px 0;
-		}
-	}
-</style>

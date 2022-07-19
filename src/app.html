@@ -1,12 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="w-100 h-100 overflow-hidden system backface-hidden bg-silver">
+<!-- prevent overscroll -->
+<!-- vw-100 vh-100 smooth-scroll backface-hidden touch-manipulation -->
+<!-- `h-100 overflow-hidden && h-100 overflow-auto`: http://stackoverflow.com/questions/12046315/ddg#17899813 -->
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
+		<meta name="description" content="" />
+		<link rel="icon" href="/favicon.ico" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		%sveltekit.head%
 	</head>
-	<body>
-		<div>%sveltekit.body%</div>
+	<body
+	class="no-clutter vh-100 w-100 h-100 bg-center cover"
+	style="background-image: url('https://tasteofthe.me/images/_cover.jpg');"
+	id="svelte">
+		<!-- no-select bg-black z-0	lh-copy ma0 pa0 vh-100 fixed  -->
+		%sveltekit.body%
 	</body>
 </html>
