@@ -26,9 +26,9 @@ import { trays } from '$lib/trays.js';
 import Row from '$lib/Row.svelte';
 </script>
 
-<Row bg="pa0 ma0 fixed verdana">
+<Row bg="pa0 ma0 fixed verdana landscape-dn">
 	<nav
-	class="w-100 z-1 pt4 flex flex-nowrap flex-row justify-around">
+	class="w-100 z-1 pt4 flex flex-nowrap flex-row justify-around ">
 		<a
 		style="line-height:4rem"
 		href="https://wa.me/447426646183/?text=I%27d%20like%20to%20order..."
@@ -105,6 +105,12 @@ import Row from '$lib/Row.svelte';
 
 
 <style>
+
+@media all and (orientation:landscape) {
+	.landscape-dn {
+		display: none;
+	}
+}
 
 
 /****** $ BREAKOUT PAGINATOR COMPONENT $ *******/
