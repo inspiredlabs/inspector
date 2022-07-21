@@ -1,9 +1,7 @@
 <script>
 
-
-import CtaTop from '$lib/CtaTop.svelte';
-
 /********* Filter *********/
+import SearchInput from "$lib/SearchInput.svelte";
 import Filter from '$lib/Filter.svelte';
 import { dips } from '$lib/dips.js';
 import { smallPots } from '$lib/smallPots.js';
@@ -24,9 +22,14 @@ import { trays } from '$lib/trays.js';
 /********* Filter *********/
 
 import Row from '$lib/Row.svelte';
+
 </script>
 
-<Row bg="pa0 ma0 fixed verdana">
+<Row bg="pa0 ma0 fixed system ">
+	<SearchInput />
+</Row>
+
+<!-- <Row bg="pa0 ma0 fixed verdana">
 <nav
 	class="w-100 z-1 pt4 flex flex-nowrap flex-row justify-around landscape-dn" style="pointer-events:none">
 	<a
@@ -53,7 +56,7 @@ import Row from '$lib/Row.svelte';
 		f3 tc mercury white-60 ts1-dark-gray"
 		>Mobile</a>
 	</nav>
-</Row>
+</Row> -->
 
 <Row bg="mv5 pv5 verdana mid-gray">
 

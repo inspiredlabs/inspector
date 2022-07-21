@@ -1,4 +1,5 @@
-// most basic example: svelte.dev/tutorial/writable-stores
+// learn: most simplified tutorial: youtube.com/watch?v=HW1TqxjJ7qo
+// learn: a basic example: svelte.dev/tutorial/writable-stores
 import {writable} from 'svelte/store'; // readable, derived
 import { browser } from '$app/env'; // LEARN: `browser` is required in SvelteKit youtube.com/watch?v=gZS-tGD2_VY
 
@@ -17,6 +18,8 @@ export const currentPageStore = writable(0); // `set` and `update` methods in ad
 
 export const searchStore = writable(''); // consider: youtube.com/watch?v=6uNwXEyIGI4
 export const pageStore = writable(''); // `read-only` - from: svelte.dev/tutorial/readable-stores
+
+
 
 
 
